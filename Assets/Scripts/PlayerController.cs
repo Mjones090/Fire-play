@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float turnSpeed;
     public float horizontalInput;
     public float forwardInput;
+    public float xRange = 30;
+    public float zRange = 30;
 
     // Start is called before the first frame update
     void Start()
@@ -21,13 +23,38 @@ public class PlayerController : MonoBehaviour
 
       
     {
-        // Move player forward or backward & rotate left or right
+        if (transform.position.x <-xRange)
+        {
+            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
+        }
+
+        if (transform.position.x > xRange)
+        {
+            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
+
+
+        if (transform.position.z < -zRange)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -zRange);
+        }
+
+        if (transform.position.z > zRange)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
+        }
+
+
+
 
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical"); 
 
+        //Move player forward and backwards based on vertical input
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        transform.Rotate(Vector3.up, turnSpeed * horizontalInput *Time.deltaTime);
+
+        //Roate player left and right based on horizontal input
+        transform.Translate(Vector3.right * speed * horizontalInput *Time.deltaTime);
 
     }
 }
