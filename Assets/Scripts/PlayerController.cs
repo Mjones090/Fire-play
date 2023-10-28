@@ -21,13 +21,13 @@ public class PlayerController : MonoBehaviour
 
       
     {
-        // Move player forward or backward & turn left or right
+        // Move player forward or backward & rotate left or right
 
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical"); 
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+        transform.Rotate(Vector3.up, turnSpeed * horizontalInput *Time.deltaTime);
 
     }
 }
