@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     public float turnSpeed;
     public float horizontalInput;
     public float forwardInput;
-    public float xRange = 30;
-    public float zRange = 30;
+    public float xRange = 50;
+    public float zRange = 50;
     public GameObject projectilePrefab;
 
     // Start is called before the first frame update
@@ -31,13 +31,13 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.x > xRange)
         {
-            transform.position = new Vector3(xRange+30, transform.position.y, transform.position.z);
+            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
 
 
-        if (transform.position.z < -zRange)
+        if (transform.position.z < -zRange/2)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -zRange);
+            transform.position = new Vector3(transform.position.x, transform.position.y, -zRange/2);
         }
 
         if (transform.position.z > zRange)
