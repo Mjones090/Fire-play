@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2260023866986283041}
   - component: {fileID: 3659736003956512827}
   - component: {fileID: -4992180530989943875}
+  - component: {fileID: 4031730074810319659}
+  - component: {fileID: 3156620889688350488}
   m_Layer: 0
   m_Name: FuelType1
   m_TagString: Untagged
@@ -121,3 +123,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+--- !u!114 &4031730074810319659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5495471098661902856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609903b8bf28bec4cb19b6b5d1f337a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3156620889688350488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5495471098661902856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609903b8bf28bec4cb19b6b5d1f337a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

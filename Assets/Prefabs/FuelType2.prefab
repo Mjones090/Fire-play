@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3782275892627873438}
   - component: {fileID: 580643118964337878}
   - component: {fileID: 4735652205280191312}
+  - component: {fileID: 5226339043640867041}
+  - component: {fileID: -998452567367102768}
   m_Layer: 0
   m_Name: FuelType2
   m_TagString: Untagged
@@ -105,3 +107,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5226339043640867041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694691508871463920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609903b8bf28bec4cb19b6b5d1f337a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-998452567367102768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694691508871463920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609903b8bf28bec4cb19b6b5d1f337a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
