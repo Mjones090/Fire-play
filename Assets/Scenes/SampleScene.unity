@@ -1842,6 +1842,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weatherPrefabs:
   - {fileID: 7290976632089919257, guid: 14f7ad92f56d8954caa1d2bcb7978aa7, type: 3}
+  - {fileID: 6323042144841401104, guid: f11b1324ba9dd844a8c67c0791bcf96e, type: 3}
+  - {fileID: 2150890892659645504, guid: 0f3bf8fd2142658468a548407ad8d90a, type: 3}
 --- !u!4 &2124308133
 Transform:
   m_ObjectHideFlags: 0

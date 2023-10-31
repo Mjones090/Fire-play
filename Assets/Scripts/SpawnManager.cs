@@ -6,7 +6,9 @@ public class SpawnManager : MonoBehaviour
 {
 
     public GameObject [] weatherPrefabs;
-    public int weatherIndex;
+    private float spawnRangeX = 20;
+    private float spawnPosZ = 20;
+    private float spawnPosY = 20;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,7 @@ public class SpawnManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.S))
         {
+            int weatherIndex = Random.Range(0, weatherPrefabs.Length);
             Instantiate(weatherPrefabs[weatherIndex], new Vector3(0, 0, 20), weatherPrefabs[weatherIndex].transform.rotation);
         }
     }
